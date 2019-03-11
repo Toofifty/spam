@@ -1,0 +1,20 @@
+{
+    "name": "toofifty/spam",
+    "description": "Easy setup Shell / PHP / Apache / MySQL environment for macOS",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Toofifty",
+            "email": "alex@matho.me"
+        }
+    ],
+    "require": {
+        "symfony/console": "^4.2"
+    },
+    "autoload": {
+        "files": ["cli/config.php"],
+        "psr-4": {
+            "Spam\\": "cli"
+        }
+    }
+}
