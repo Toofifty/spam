@@ -8,6 +8,6 @@ then
 fi
 
 SOURCE="$(readlink ${BASH_SOURCE[0]})"
-DIR=$(cd $(dirname $SOURCE) && pwd)
+DIR=$(cd $(php -r "echo dirname('$SOURCE');") && pwd)
 
 [ $(which php7.3) ] && php7.3 $DIR/cli/spam.php "$@" || php $DIR/cli/spam.php "$@"

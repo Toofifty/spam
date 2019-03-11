@@ -1,7 +1,6 @@
 {
     "name": "toofifty/spam",
     "description": "Easy setup Shell / PHP / Apache / MySQL environment for macOS",
-    "type": "project",
     "authors": [
         {
             "name": "Toofifty",
